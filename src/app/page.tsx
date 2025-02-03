@@ -1,101 +1,70 @@
+"use client"
+import { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/svgexport-24.svg"
+import loadingLogo from "../../public/images/veegram logos/svgexport-21.svg"
+import sideImageOne from "../../public/images/mainOne.gif"
+// import sideImageTwo from "../../public/images/"
+// import slides from "../../components/slides";
+// import Carousels from "../../components/carousel";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+  // const [slides, setslides] = useState([]);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+      // setslides(slidesOfData);
+    }, 3000);
+  }, []);
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    <>
+      {
+        loading ?
+          <>
+            <div className="w-full h-full bg-[#FFF7F2] flex justify-center items-center pt-[309px] pb-[309px] md:pt-[309px] md:pb-[309px] lg:pt-[309px] lg:pb-[309px] px-10 md:px-0 lg:px-0">
+              <Image src={loadingLogo} alt="Loading......" width={400} height={100} />
+            </div>
+          </> :
+          <main>
+            <header className="bg-[#FFF7F2] w-[100%] sticky top-0">
+              <section className="flex justify-between items-center mt-12">
+                <div className="ml-[70px]">
+                  <Image src={logo} alt="Veegram" width={175} height={100} />
+                </div>
+                <div>
+                  <ul className="flex gap-[45px]">
+                    <li className="font-semi-bold text-xl"><Link href="/">Home</Link></li>
+                    <li className="font-semi-bold text-xl"><Link href="/">About</Link></li>
+                    <li className="font-semi-bold text-xl"><Link href="/">Contact-Us</Link></li>
+                    <li className="font-semi-bold text-xl"><Link href="/">FAQs</Link></li>
+                    <li className="font-semi-bold text-xl"><Link href="/">Others</Link></li>
+                  </ul>
+                </div>
+                <div className="mr-32 flex">
+                  <Link href="/auth/signin"><button className="border border-[#621E72] font-[700] text-[#621E72] rounded-md h-[45px] w-[120px] mr-4 hover:bg-[#621E72] hover:text-[#fff] hover:border-0">Sign In</button></Link>
+                  <Link href="/auth/signup"><button className="bg-[#621E72] font-[700] text-[#fff] rounded-md h-[45px] w-[120px] hover:border hover:border-[#621E72] hover:text-[#621E72] hover:bg-[#FFF7F2]">Sign Up</button></Link>
+                </div>
+              </section>
+            </header>
+            <section className="flex justify-between overflow-auto items-center mt-10">
+              <div className="flex-1">
+                <p className="font-apple text-[30px] font-medium text-[#525254] mt-20 ml-[89px]">Life&apos;s better with the people you love ✨</p>
+                <div className="ml-[89px] text-[56px] font-bold mt-3 font-apple text-[#621E72]">
+                  Share moments, memories, and laughs with our app!
+                </div>
+                <p className="ml-[89px] font-apple font-normal text-[16px]">
+                  Ready to connect with your loved ones in a whole new way? Download our app and join the community! #DownloadNow #ConnectWithUs, Feeling social? Level up your social game! Our app offers unique features to make connecting with friends and family even more fun! Squad goals achieved! Our app makes staying connected with your loved ones easier than ever.
+                </p>
+              </div>
+              <div className="flex-1">
+                <Image src={sideImageOne} alt="veegram info" width={700} height={200} className="flex justify-center items-center" />
+              </div>
+            </section>
+          </main>
+      }
+    </>
   );
 }
