@@ -7,9 +7,10 @@ import { FaCaretDown } from "react-icons/fa";
 import { IoPersonAddOutline } from "react-icons/io5";
 import { RiMessage3Line } from "react-icons/ri";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { Noto_Sans } from 'next/font/google'
 import SlideBarOne from "./sidebar/page"
 import HomeBar from "./homebar/page"
-import { Noto_Sans } from 'next/font/google'
+HomeBar
 
 export default function HomePage () {
 
