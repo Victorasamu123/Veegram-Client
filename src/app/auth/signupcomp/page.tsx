@@ -9,6 +9,11 @@ import facebook from "../../../../public/facebook.png"
 import { useRouter } from "next/navigation"
 
 export default function SignupComp() {
+  const router = useRouter()
+const signup = () => {
+  router.push("/home")
+}
+
   return (
     <>
     <div className="w-[100vw] h-[100vh] bg-[#E8E8E8] flex justify-center items-center">
@@ -36,7 +41,7 @@ export default function SignupComp() {
             <input type="password" className="w-[85%] h-[50px] bg-[#E8E8E8] rounded-[4px] focus:outline-[#621E72] hover:border-[2px] pl-2 text-[#67656E] text-[14px] font-semibold" placeholder="Password should be at least 6 characters"/>
             </div>
             <div className="block">
-                <button className="mt-[4%] w-[85%] h-[50px] rounded-[4px] text-[#FFFFFF] text-[18px] font-semibold font-apple bg-[#621E72]">SignUp</button>
+                <button onClick={signup} className="mt-[4%] w-[85%] h-[50px] rounded-[4px] text-[#FFFFFF] text-[18px] font-semibold font-apple bg-[#621E72]">SignUp</button>
             </div>
         </div>
         <div className="ml-[8%] mt-[2%]"> 

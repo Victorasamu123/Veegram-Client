@@ -3,11 +3,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/svgexport-24.svg"
+import { FaLocationArrow } from "react-icons/fa6";
 import loadingLogo from "../../public/images/veegram logos/svgexport-21.svg"
 import sideImageOne from "../../public/images/mainOne.gif"
+import { Noto_Sans } from "next/font/google";
 // import sideImageTwo from "../../public/images/"
 // import slides from "../../components/slides";
 // import Carousels from "../../components/carousel";
+
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +31,7 @@ export default function Home() {
               <Image src={loadingLogo} alt="Loading......" width={400} height={100} />
             </div>
           </> :
-          <main>
+          <main className="overflow-hidden">
             <header className="bg-[#FFF7F2] w-[100%] sticky top-0">
               <section className="flex justify-between items-center mt-12">
                 <div className="ml-[70px]">
@@ -49,18 +52,23 @@ export default function Home() {
                 </div>
               </section>
             </header>
-            <section className="flex justify-between overflow-auto items-center mt-10">
-              <div className="flex-1">
-                <p className="font-apple text-[30px] font-medium text-[#525254] mt-20 ml-[89px]">Life&apos;s better with the people you love ✨</p>
+            <section className="flex justify-between items-center -mt-[87px]">
+              <div className="flex-1 mt-14 ml-8">
+                <p className="font-apple text-[30px] font-medium text-[#525254] ml-[89px]">Life&apos;s better with the people you love ✨</p>
                 <div className="ml-[89px] text-[56px] font-bold mt-3 font-apple text-[#621E72]">
                   Share moments, memories, and laughs with our app!
                 </div>
-                <p className="ml-[89px] font-apple font-normal text-[16px]">
+                <p className="ml-[89px] font-apple font-semibold text-[18px] text-[#18171B]">
                   Ready to connect with your loved ones in a whole new way? Download our app and join the community! #DownloadNow #ConnectWithUs, Feeling social? Level up your social game! Our app offers unique features to make connecting with friends and family even more fun! Squad goals achieved! Our app makes staying connected with your loved ones easier than ever.
                 </p>
+                <div className="ml-[89px] mt-10">
+                  <Link href="/auth/signup">
+                  <button className="bg-[#DDD6FE] h-[50px] w-[195px] rounded-md text-[#621E72] font-[700] text-[18px] flex justify-center items-center">Get Started <FaLocationArrow className="ml-4"/></button>
+                  </Link>
+                </div>
               </div>
               <div className="flex-1">
-                <Image src={sideImageOne} alt="veegram info" width={700} height={200} className="flex justify-center items-center" />
+                <Image src={sideImageOne} alt="veegram info" width={800} height={200} className="flex justify-center items-center" />
               </div>
             </section>
           </main>

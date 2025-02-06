@@ -1,7 +1,9 @@
 "use client"
+import { useState, useEffect } from "react";
 import Image from "next/image"
 import logo from "../../../public/svgexport-24.svg"
 import testp from "../../../public/test p.jpg"
+import loadingLogo from "../../../public/images/veegram logos/svgexport-21.svg"
 import { AiOutlineSearch } from "react-icons/ai"
 import { FaCaretDown } from "react-icons/fa";
 import { IoPersonAddOutline } from "react-icons/io5";
@@ -10,12 +12,24 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { Noto_Sans } from 'next/font/google'
 import SlideBarOne from "./sidebar/page"
 import HomeBar from "./homebar/page"
-HomeBar
 
-export default function HomePage () {
+export default function HomePage () {   
+ const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
     return(
    <>
+   {
+      loading ?
+      <>
+            <div className="w-full h-full bg-[#FFF7F2] flex justify-center items-center pt-[309px] pb-[309px] md:pt-[309px] md:pb-[309px] lg:pt-[309px] lg:pb-[309px] px-10 md:px-0 lg:px-0">
+              <Image src={loadingLogo} alt="Loading......" width={400} height={100} />
+            </div>
+          </> :
      <section className="w-full h-full">
      <nav>
       <header className="w-full sticky top-0 bg-[#FFF7F2]">
@@ -42,6 +56,7 @@ export default function HomePage () {
           <HomeBar/>
       </div>
      </section>
+       }
    </>
     )
 } 
