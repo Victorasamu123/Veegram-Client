@@ -12,6 +12,7 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { Noto_Sans } from 'next/font/google'
 import SlideBarOne from "./sidebar/page"
 import HomeBar from "./homebar/page"
+import SlideBarTwo from "./sidebartwo/page";
 
 export default function HomePage () {   
  const [loading, setLoading] = useState(true);
@@ -54,6 +55,7 @@ export default function HomePage () {
       <div className="flex">
           <SlideBarOne/>
           <HomeBar/>
+          <SlideBarTwo/>
       </div>
      </section>
        }
