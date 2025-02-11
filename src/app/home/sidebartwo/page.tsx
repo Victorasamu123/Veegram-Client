@@ -4,6 +4,10 @@ import React from 'react'
 
 export default function SlideBarTwo() {
   return (
-    <div>SlideBarTwo</div>
+    <>
+      <div className='w-[28%]'>
+    
+      </div>
+    </>
   )
 }
