@@ -9,14 +9,16 @@ import storySix from "../../../../public/people-images/averie-woodard-WsSdUPXVb4
 import storySeven from "../../../../public/people-images/bardia-hashemirad-3P7jxpEgkC4-unsplash (1).jpg"
 import storyEight from "../../../../public/people-images/jessica-felicio-nIKCy5CWIzk-unsplash (1).jpg"
 import storyNine from "../../../../public/people-images/aiony-haust-f2ar0ltTvaI-unsplash (1).jpg"
+import "./persona.css"
 export default function HomeBar() {
   
   return (
     <>
+    {/* <div></div> */}
       <div className='bg-[#E8E8E8] w-[55%] h-full mt-4'>
         {/* storeis */}
       <div className='pl-8 pt-[35px] pr-8 flex pb-2'>
-       <div className='w-[82px] h-[110px] rounded-xl p-[2px] bg-storyOne'>
+       <div className='w-[82px] h-[110px] rounded-xl p-[2px] border-[#621E72] border-[2px]'>
         {/* <Image src={storyOne} alt='' width={70}  className='rounded-xl'/> */}
        </div>
        <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
