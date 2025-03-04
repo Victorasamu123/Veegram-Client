@@ -14,36 +14,30 @@ export default function HomeBar() {
   
   return (
     <>
-    {/* <div></div> */}
+    {/* <div>gti</div> */}
       <div className='bg-[#E8E8E8] w-[55%] h-full mt-4'>
         {/* storeis */}
       <div className='pl-8 pt-[35px] pr-8 flex pb-2'>
-       <div className='w-[82px] h-[110px] rounded-xl p-[2px] border-[#621E72] border-[2px]'>
-        {/* <Image src={storyOne} alt='' width={70}  className='rounded-xl'/> */}
+       <div className='w-[100px] h-[130px] rounded-xl p-[2px] backgrounding'>
+        
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyTwo} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingOne'>
+        
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyThree} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingTwo'>
+        
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyFour} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingThree'>
+        
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyFive} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingFour'>
+       
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storySix} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingFive'>
+        
        </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storySeven} alt='' width={70} className='rounded-xl'/>
-       </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyEight} alt='' width={70} className='rounded-xl'/>
-       </div>
-       <div className='ml-4 bw-fit h-fit rounded-xl border-[2px] p-[2px] border-[#621E72]'>
-        <Image src={storyNine} alt='' width={70} className='rounded-xl'/>
+       <div className='ml-4 w-[100px] h-[130px] rounded-xl p-[2px] backgroundingSix'>
+      
        </div>
       </div>
       </div>
