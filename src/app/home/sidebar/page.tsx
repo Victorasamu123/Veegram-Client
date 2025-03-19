@@ -10,7 +10,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { IoCreateOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 import { MdLogout } from "react-icons/md";
-// import profile from "../../../../public/test p.jpg"
+import profile from "../../../../public/test p.jpg"
 import { Noto_Sans } from 'next/font/google'
 
 
@@ -65,7 +65,7 @@ export default function SlideBarOne() {
        </div>
        <div className="w-full pt-6 pl-8">
         <Link href='' className="flex">
-        {/* <Image src={profile} alt="" width={35} className="rounded-[50%]"/> */}
+        <Image src={profile} alt="" width={35} className="rounded-[50%]"/>
         <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Profile</p>
         </Link>
        </div>
