@@ -20,7 +20,7 @@ const notoSans = Noto_Sans({
 export default function SlideBarOne() {
   return (
     <>
-    <div className='w-[17%] h-full mt-6'>
+    <div className='w-[17%] h-full'>
        <div className="w-full pt-10 pl-8">
         <Link href='' className="flex">
         <GoHome className="text-[29px]"/>

@@ -19,7 +19,7 @@ export default function HomeBar() {
   return (
     <>
     {/* <div>gti</div> */}
-      <div className='bg-[#E8E8E8] w-[55%] h-full mt-4'>
+      <div className='bg-[#E8E8E8] w-[55%] h-full'>
         <p className={`${notoSans.className} ml-10 mt-[20px] text-[25px] font-[500]`}>
           Stories
         </p>

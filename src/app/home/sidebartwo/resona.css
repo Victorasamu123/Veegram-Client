@@ -5,3 +5,35 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.spanTwoOf {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/stefan-stefancik-QXevDflbl8A-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spanThreeOf {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/shifaaz-shamoon-pNrMhpntZFM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spanFourOf {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/ryan-moreno-IcAtXrAZx8E-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spanFiveOf {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/suhyeon-choi-G9XMLUAjETM-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

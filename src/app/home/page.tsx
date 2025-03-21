@@ -32,9 +32,9 @@ export default function HomePage () {
             </div>
           </> :
      <section className="w-full h-full">
-     <nav>
-      <header className="w-full border sticky top-0 bg-[#FFF7F2]">
-        <div className="flex justify-between items-center mt-6 pr-8">
+     <nav className="shadow-sm pb-4">
+      <header className="w-full sticky top-0 bg-[#FFF7F2]">
+        <div className="flex justify-between items-center mt-4 pr-8">
           <div className="ml-12 flex">
             <Image src={logo} alt="" width={120}/>
           <div className="flex items-center justify-center ml-24 bg-[#E8E8E8] pl-2 pr-2 h-[40px] rounded-lg">
