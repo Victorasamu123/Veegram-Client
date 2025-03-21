@@ -2,11 +2,12 @@
 import React from 'react'
 import "./resona.css"
 import Link from 'next/link'
+import { FiUserPlus } from "react-icons/fi";
 
 export default function SlideBarTwo() {
   return (
     <>
-      <div className='w-[28%] pr-14'>
+      <div className='w-[28%] pr-14 fixed right-0'>
        <p className='text-[#525264] text-[19px] mt-10 ml-8'>FRIENDS</p>
         <section className='ml-8 mt-6' id='friends'>
           <div className='flex justify-between'>
@@ -50,6 +51,38 @@ export default function SlideBarTwo() {
           </div>
 
           <div className='underline text-right mt-2 text-[#621E72]'><Link href=''>All Friends</Link></div>
+        </section>
+        <p className='text-[#525264] text-[19px] mt-10 ml-8'>Add Friends</p>
+        <section className='ml-8 mt-4'>
+        <div className='flex justify-between'>
+            <div className='flex'>
+            <span className='w-[45px] border-[#621E72] border-[1px] spanOfAddF'></span>
+            <p className='mt-3 ml-3'>Kelly Powell</p>
+            </div>
+            <button className='bg-[#621E72] w-14 h-8 flex justify-center items-center rounded-md mt-1'>
+            <FiUserPlus className='text-[18px] text-white '/>
+            </button>
+          </div>
+
+          <div className='flex justify-between mt-4'>
+            <div className='flex'>
+            <span className='w-[45px] border-[#621E72] border-[1px] spanOfAddFT'></span>
+            <p className='mt-3 ml-3'>Prince Akashi</p>
+            </div>
+            <button className='bg-[#621E72] w-14 h-8 flex justify-center items-center rounded-md mt-1'>
+            <FiUserPlus className='text-[18px] text-white '/>
+            </button>
+          </div>
+
+          <div className='flex justify-between mt-4'>
+            <div className='flex'>
+            <span className='w-[45px] border-[#621E72] border-[1px] spanOfAddFTt'></span>
+            <p className='mt-3 ml-3'>Promise Adekunle</p>
+            </div>
+            <button className='bg-[#621E72] w-14 h-8 flex justify-center items-center rounded-md mt-1'>
+            <FiUserPlus className='text-[18px] text-white '/>
+            </button>
+          </div>
         </section>
       </div>
     </>

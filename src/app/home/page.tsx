@@ -13,6 +13,7 @@ import { Noto_Sans } from 'next/font/google'
 import SlideBarOne from "./sidebar/page"
 import HomeBar from "./homebar/page"
 import SlideBarTwo from "./sidebartwo/page";
+import "./sidebartwo/resona.css"
 
 export default function HomePage () {   
  const [loading, setLoading] = useState(true);
@@ -32,9 +33,9 @@ export default function HomePage () {
             </div>
           </> :
      <section className="w-full h-full">
-     <nav className="shadow-sm pb-4">
-      <header className="w-full sticky top-0 bg-[#FFF7F2]">
-        <div className="flex justify-between items-center mt-4 pr-8">
+     <nav className="shadow-sm fixed top-0 left-0 right-0">
+      <header className="w-full bg-[#FFF7F2] pb-4">
+        <div className="flex justify-between items-center pt-4 pr-8">
           <div className="ml-12 flex">
             <Image src={logo} alt="" width={120}/>
           <div className="flex items-center justify-center ml-24 bg-[#E8E8E8] pl-2 pr-2 h-[40px] rounded-lg">
@@ -52,7 +53,7 @@ export default function HomePage () {
         </div>
       </header>
       </nav>
-      <div className="flex">
+      <div className="flex mt-[73px]">
           <SlideBarOne/>
           <HomeBar/>
           <SlideBarTwo/>

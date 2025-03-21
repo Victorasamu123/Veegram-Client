@@ -37,3 +37,33 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.spanOfAddF {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/prince-akachi-LWkFHEGpleE-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spanOfAddFT {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/prince-akachi-l3IHXOdMyHQ-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spanOfAddFTt {
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../../../../public/people-images/premium_photo-1719327579779-55a367ed9c6e.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* :hover.test{
+    transform: translateY(-5px), translateX(7px);
+    transition-duration: 1.5s;
+} */

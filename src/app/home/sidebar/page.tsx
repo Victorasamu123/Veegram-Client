@@ -20,63 +20,63 @@ const notoSans = Noto_Sans({
 export default function SlideBarOne() {
   return (
     <>
-    <div className='w-[17%] h-full'>
-       <div className="w-full pt-10 pl-8">
+    <div className='w-[17%] h-full fixed left-8'>
+       <div className="w-full mt-10">
         <Link href='' className="flex">
         <GoHome className="text-[29px]"/>
-        <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Home</p>
+        <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Home</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
          <Link href='' className="flex">
          <IoPeopleOutline className="text-[29px]"/>
-          <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Friends</p>
+          <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Friends</p>
          </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href="" className="flex">
           <IoSearch className="text-[29px]"/>
-          <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Search</p>
+          <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Search</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href='' className="flex">
           <MdOutlineVideoLibrary className="text-[29px]"/>
-          <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Clips</p>
+          <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Clips</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href='' className="flex">
         <RiMessage3Line className="text-[29px]"/>
-        <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Messages</p>
+        <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Messages</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href='' className="flex">
         <IoIosNotificationsOutline className="text-[29px]"/>
-        <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Notifications</p>
+        <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Notifications</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href='' className="flex">
         <IoCreateOutline className="text-[29px]"/>
-        <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Create</p>
+        <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Create</p>
         </Link>
        </div>
-       <div className="w-full pt-6 pl-8">
+       <div className="w-full mt-6">
         <Link href='' className="flex">
         <Image src={profile} alt="" width={35} className="rounded-[50%]"/>
-        <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Profile</p>
+        <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Profile</p>
         </Link>
        </div>
        <div className="mt-24">
-         <div className="w-full pt-6 pl-8">
+         <div className="w-full pt-6">
           <Link href='' className="flex">
           <IoSettingsOutline className="text-[29px]"/>
           <p className={`${notoSans.className} text-[18px] font-semibold mt-[2px] ml-2`}>Settings</p>
           </Link>
          </div>
-         <div className="w-full pt-6 pl-8">
+         <div className="w-full pt-6">
           <Link href='' className="flex">
           <MdLogout className="text-[29px]"/>
           <p className="text-[18px] font-semibold mt-[2px] ml-2">Logout</p>
