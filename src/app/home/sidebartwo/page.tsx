@@ -83,6 +83,8 @@ export default function SlideBarTwo() {
             <FiUserPlus className='text-[18px] text-white '/>
             </button>
           </div>
+
+          <div className='underline text-right mt-2 text-[#621E72]'><Link href=''>See All</Link></div>
         </section>
       </div>
     </>
