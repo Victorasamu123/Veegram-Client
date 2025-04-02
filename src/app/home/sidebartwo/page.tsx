@@ -50,7 +50,7 @@ export default function SlideBarTwo() {
             <p className='w-[11px] h-[11px] bg-[#621E72] mt-4 rounded-full'></p>
           </div>
 
-          <div className='underline text-right mt-2 text-[#621E72]'><Link href=''>All Friends</Link></div>
+          <div className='underline italic text-right mt-2 text-[#621E72]'><Link href=''>All Friends</Link></div>
         </section>
         <p className='text-[#525264] text-[19px] mt-10 ml-8'>Add Friends</p>
         <section className='ml-8 mt-4'>
@@ -84,7 +84,7 @@ export default function SlideBarTwo() {
             </button>
           </div>
 
-          <div className='underline text-right mt-2 text-[#621E72]'><Link href=''>See All</Link></div>
+          <div className='italic underline text-right mt-2 text-[#621E72]'><Link href=''>See All</Link></div>
         </section>
       </div>
     </>

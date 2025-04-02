@@ -8,8 +8,10 @@ import storyFive from "../../../../public/people-images/brooke-cagle-emlKHDEydhg
 import storySix from "../../../../public/people-images/brooke-cagle-TK35M7fUWqM-unsplash (1).jpg"
 import storySeven from "../../../../public/people-images/brooke-cagle-R0Ea06wC2IM-unsplash (1).jpg"
 import "./persona.css"
+import { RxDotsHorizontal } from "react-icons/rx";
+import { MdCancel } from "react-icons/md";
 import { Noto_Sans } from 'next/font/google'
-
+import testPost from "../../../../public/people-images/caleb-ekeroth-wSBQFWF77lI-unsplash.jpg"
 
 const notoSans = Noto_Sans({
   subsets:['latin'],
@@ -81,14 +83,33 @@ export default function HomeBar() {
       <section id='mainPost' className='flex justify-center flex-col items-center mt-4 mb-8'>
         <div className='w-[80%] h-[660px] bg-[#FFF7F2] rounded-lg shadow-lg mb-4' id='card'>
           <div className='w-full h-[110px] rounded-t-lg'>
-             <p>
-                 
-            </p>  
+             <div className='flex justify-between mt-4 mx-4'>
+                 <div className='flex'>
+                   <span className='w-[45px] border-[#621E72] border-[1px] spanOfAddFTt'>
+                   </span>
+                   <div className='mt-3 ml-3 text-[18px] font-medium'>
+                    Steve Bills <span>:</span><span className='text-[#621E72] ml-2 text-[15px]'>Following</span>
+                   </div>
+                 </div>
+                 <div className='flex text-[#621E72] text-[24px] mt-3'>
+                 <RxDotsHorizontal />
+                 <MdCancel className='ml-4'/>
+                 </div>
+            </div>
+            <p className='text-[#757576] ml-[70px] text-[13px] -mt-2'>24 march at 21:58</p>
+            <p className='mx-4 mt-4'>
+                  Guess I will be back before summer 😜.
+                 </p>
           </div>  
-          <div className='w-full h-[470px] bg-[#b0a7a2]'></div>
-          <div></div>      
+          <div className='w-full h-[470px] bg-[#b0a7a2]'>
+            {/* <div className='h-fit'>
+             <Image src={testPost} alt='dey'></Image>
+            </div> */}
+          </div>
+          <div className=''>
+          </div>      
         </div>
-
+        
         <div className='w-[80%] h-[660px] bg-[#FFF7F2] rounded-lg shadow-lg mb-4' id='card'>
           <div className='w-full h-[110px] rounded-t-lg'></div>  
           <div className='w-full h-[470px] bg-[#b0a7a2]'></div>

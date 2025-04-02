@@ -64,7 +64,7 @@ export default function SlideBarOne() {
         </Link>
        </div>
        <div className="w-full mt-6">
-        <Link href='' className="flex">
+        <Link href='/home/profile' className="flex">
         <Image src={profile} alt="" width={35} className="rounded-[50%]"/>
         <p className={`${notoSans.className} text-[18px] font-normal mt-[2px] ml-2`}>Profile</p>
         </Link>
