@@ -54,9 +54,7 @@ export default function ProfilPage() {
           <div className="w-[83%] h-full ml-[17%] bg-[#E8E8E8]">
             <div className="flex justify-center">
                 <div>
-                    every application has a way to looking forward to a greater good of hospitality, but at times One must secure a greater way to face a higher o
-
-                    Everybody goin nah love someday, everyone is goin nah love sometimes eh eh cus evrything goin be alright everything goin be alright eheh 
+                  
                 </div>
             </div>
           </div>
