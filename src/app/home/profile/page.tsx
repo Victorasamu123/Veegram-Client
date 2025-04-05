@@ -54,7 +54,7 @@ export default function ProfilPage() {
           <div className="w-[83%] h-full ml-[17%] bg-[#E8E8E8]">
             <div className="flex justify-center">
                 <div>
-                  
+                  div
                 </div>
             </div>
           </div>
